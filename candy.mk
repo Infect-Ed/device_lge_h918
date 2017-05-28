@@ -1,12 +1,12 @@
 $(call inherit-product, device/lge/h918/full_h918.mk)
 
-# Inherit some common stuff.
-$(call inherit-product, vendor/deso/common.mk)
+# Inherit some common CANDY stuff.
+$(call inherit-product, vendor/candy/config/common.mk)
 
 # Overlays (inherit after vendor/aokp to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_NAME := deso_h918
+PRODUCT_NAME := candy_h918
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="v20" \
