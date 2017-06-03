@@ -1,7 +1,7 @@
 $(call inherit-product, device/lge/h918/full_h918.mk)
 
 # Inherit some common CANDY stuff.
-$(call inherit-product, vendor/candy/config/common.mk)
+$(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
 # Overlays (inherit after vendor/aokp to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
